@@ -15,7 +15,7 @@ function App() {
       <div className='wrapper'>
               <Switch>
         <Route exact path='/favorites' render = {() => <Favorites favorite={favorite} />}/>
-        <Route exact path='/:id?' render = {({match}) => <Homepage code={match.params.id} setFavorite={setFavorite} favorite={favorite} />}/>
+        <Route exact path='/' render = {({match}) => <Homepage code={match.params.id} setFavorite={setFavorite} favorite={favorite} />}/>
 
       </Switch>
       </div>
