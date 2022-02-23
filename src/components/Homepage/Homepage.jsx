@@ -3,8 +3,8 @@ import styles from './Homepage.module.css'
 import { fetch_data } from '../../functions'
 
 export default function Homepage({code, favorite, setFavorite}) {
-    const defaultKey = code ? favorite[code-1].key : 215854
-    const defaultName = code ? favorite[code-1].cityName : 'Tel Aviv'
+    const defaultKey = code ? favorite[code-1]?.key : 215854
+    const defaultName = code ? favorite[code-1]?.cityName : 'Tel Aviv'
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
     const [hints, setHints] = useState([])

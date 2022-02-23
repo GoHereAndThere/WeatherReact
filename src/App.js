@@ -7,7 +7,7 @@ import NavBar from './components/NavBar/NavBar';
 
 function App() {
   const [favorite, setFavorite] = useState([])
-  console.log(favorite);
+
   return (
     <BrowserRouter>
     <div className="App">
